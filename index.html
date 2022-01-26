@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	    <title>Portfolio</title>
+		<script src="https://kit.fontawesome.com/12c29c871e.js" crossorigin="anonymous"></script>
+	   <link rel="stylesheet" type="text/css" href="css/style.css">
+	   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	   <style>
+		body{
+			background: linear-gradient(to top right, #1a1a1a 50%, #404040 111%);
+		}
+		.wrapper a{
+			display: block;
+			text-decoration:none;
+			color: inherit;
+		}
+		.card{
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+			width: 300px;  
+			background: #fff;
+			text-align: center;
+			font-size: 16px;
+			font-family: sans-serif;
+			float: left;
+			margin: 20px;
+			border: 4px solid transparent;
+			border-image: linear-gradient(to top right, #993333 26%, #ff9900 111%);
+			border-image-slice: 2;
+			box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+			transition: .3s;
+		}
+		.card:hover{
+			box-shadow: 0px 10px 20px green;
+			transform: scale(1.05,1.05);
+		}
+		.conatiner{
+			padding: 2px 16px;
+		}
+	</style>
+	</head>
+
+	<body>
+	    <div class="loader_bg">
+			<div class="loader"></div>
+		</div>
+		<script type="text/javascript" src="js/preloader.js"></script>
+
+		
+		<input type="checkbox" id="check">
+
+
+	    <header>
+	    	<label for="check">
+	    		<i class="fa fa-bars" id="sidebar_btn"></i>
+	    	</label>
+	    	<div class="left_area">
+	    		<h3>Team <span>ETF</span></h3>
+	    	</div>
+	    	<!-- <div class="right_area">
+	    		<a href="#" class="logout_btn">Logout</a>
+	    	</div> -->
+
+	    </header>
+
+
+	    <div class="sidebar">
+	    	<center>
+	    		<img src="images/new.png" class="profile_image" alt="">
+	    		<h4>Sanketh J</h4>
+	    	</center>
+	    	<center><div class="sidebar_sub">
+				<a href="https://github.com/sankethj/"><i class="fa fa-linkedin"></i></a>
+				<a href="https://github.com/sankethj/"><i class="fa fa-telegram"></i></a>
+				<a href="https://github.com/sankethj/"><i class="fa fa-github-square"></i></a>
+				<a href="https://github.com/sankethj/"><i class="fa fa-youtube"></i></a>
+			</div>
+	    	</center><div class="dsidebar">
+				<a href="#"><i class="fa fa-home"></i><span>Home</span></a>		   	
+				<a href="#"><i class="fa fa-user"></i><span> About</span></a>
+				<a href="#p_wrapper"><i class="fas fa-laptop-code"></i><span>Projects</span></a>	
+				<a href="#"><i class="fa fa-file"></i><span>   Resume</span></a>		
+				<a href="#"><i class="fa fa-address-card"></i><span>Contact</span></a>
+			</div>
+
+	    </div>
+
+
+	    <div class="content"></div>
+
+		<div class="wrapper" id="p_wrapper">
+            <a href="https://github.com/sankethj/z-cam">
+            <div class="card">
+                <img src="images/zcam_logo1.png" alt="zcam" style="width:100%">
+                <div class="conatiner">
+                    <h4><b>ZCam</b></h4>
+                    <p>First Python compatible Camera Hacking</p>
+                </div>
+            </div>
+            </a>
+            <div class="card">
+                <img src="images/zcam_logo1.png" alt="zcam" style="width:100%">
+                <div class="conatiner">
+                    <h4><b>ZCam</b></h4>
+                    <p>First Python compatible Camera Hacking</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/zcam_logo1.png" alt="zcam" style="width:100%">
+                <div class="conatiner">
+                    <h4><b>ZCam</b></h4>
+                    <p>First Python compatible Camera Hacking</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/zcam_logo1.png" alt="zcam" style="width:100%">
+                <div class="conatiner">
+                    <h4><b>ZCam</b></h4>
+                    <p>First Python compatible Camera Hacking</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/zcam_logo1.png" alt="zcam" style="width:100%">
+                <div class="conatiner">
+                    <h4><b>ZCam</b></h4>
+                    <p>First Python compatible Camera Hacking</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/zcam_logo1.png" alt="zcam" style="width:100%">
+                <div class="conatiner">
+                    <h4><b>ZCam</b></h4>
+                    <p>First Python compatible Camera Hacking</p>
+                </div>
+            </div>
+        </div>
+	</body>
+
+</html>

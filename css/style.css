@@ -1,0 +1,244 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+	/*background: #1a1a1a */
+	background: linear-gradient(to top right, #1a1a1a 50%, #404040 111%);
+}
+
+.loader_bg{
+	position: fixed;
+	background: #333333;
+	width: 100%;
+	height: 100%;
+}
+
+.loader{
+	width: 100px;
+	height: 100px;
+	top: calc(50vh - 50px);
+	left: calc(50vw - 50px);
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+}
+
+.loader::before{
+	content: '';
+	height: 30px;
+	width: 30px;
+	background: transparent;
+	border-radius: 50px;
+	border: 20px ridge;
+	border-width: 25px;
+	border-color: lime transparent;
+	animation: load 1s infinite;
+}
+
+@keyframes load{
+	50%{
+		transform: rotateZ(180deg);
+	}
+	100%{
+		transform: rotateZ(360deg);
+	}
+}
+
+header{
+	position: fixed; 
+	background: #303030FF;
+	padding: 20px;
+	width: 100%;
+	height: 30px;
+}
+
+.left_area h3{
+	color: #ffff;
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: 900;	
+}
+
+.left_area span{
+	background: -webkit-linear-gradient(#339933, #00ff00);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/*
+.logout_btn{
+	padding: 5px;
+	text-decoration: none;
+	float: right;
+	margin-top: -30px;
+	margin-right: 40px;
+	border-radius: 2px;
+	font-size: 15px;
+	font-weight: 600;
+	color: #ffff;
+}
+
+.logout_btn:hover{
+	background: #000;
+}
+*/
+
+.sidebar{
+	background: #303030;
+	margin-top: 70px;
+	padding-top: 30px;
+	position: fixed;
+	left: 0;
+	width: 250px;
+	height: 100%;
+	transition: 0.5s;
+	
+}
+
+.sidebar .profile_image{
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	margin-bottom: 10px;
+	background: linear-gradient(to top right, #993333 26%, #ff9900 111%);
+	padding: 5px;
+}
+
+.sidebar h4{
+	color: #ffffff;
+	margin-top: 0;
+	margin-bottom: 10px;/*
+	background: -webkit-linear-gradient(180deg,#339933, #00ff00);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;*/
+}
+
+.sidebar .dsidebar a{
+	color: #ffff;
+	display: block;
+	width: 100%;
+	line-height: 60px;
+	text-decoration: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	transition: .5s;
+}
+
+.sidebar .dsidebar a:hover{
+	background: linear-gradient(to top right, #339933 31%, #00ff00 94%);
+	color: #303030;
+}
+
+.sidebar .dsidebar i{
+	padding-right: 10px;
+}
+
+label #sidebar_btn{
+	z-index: 1;
+	color: #fff;	
+	cursor: pointer;
+	float: right;
+	margin-right: 40px;
+	padding: 6px 6px;
+	font-size: 20px;
+	transition: 0.5s;
+	transition-property: color;
+	border: 2px solid transparent;
+	border-image: linear-gradient(to top right, #993333 26%, #ff9900 111%);
+	border-image-slice: 2;
+}
+
+label #sidebar_btn:hover{
+	background: linear-gradient(to top right, #339933 31%, #00ff00 94%);
+	color: #303030;
+}
+
+#check:not(:checked) ~ .sidebar{
+	left: -290px;
+}
+
+#check:not(:checked) ~ .sidebar a span{
+	display: flex;
+}
+
+.content{
+	margin-left: 250px;
+	background: url(../images/Team_ETF_logo.PNG) no-repeat;
+	background-position: center;
+	background-attachment: absolute;
+	background-size: cover;
+	height: 100vh;
+	transition: .5s;
+	
+}
+
+#check:not(:checked) ~ .content{
+	margin-left: 0;
+}
+
+.wrapper{
+	margin-left: 250px;
+	background: linear-gradient(to top right, #1a1a1a 50%, #404040 111%);
+	background-position: center;
+	background-attachment: absolute;
+	background-size: cover;
+	height: 100vh;
+	transition: .5s;
+	
+}
+
+#check:not(:checked) ~ .wrapper{
+	margin-left: 0;
+}
+
+#check{
+	display: none;
+}
+
+.sidebar_sub{
+	padding-bottom: 20px;
+}
+
+.sidebar_sub a{
+	display: inline;
+}
+
+.sidebar_sub i{
+	padding: 6px 6px;
+	margin: 4px;
+	border: 2px solid transparent;
+	border-image: linear-gradient(to top right, #993333 26%, #ff9900 111%);
+	border-image-slice: 1;
+	color: #fff;
+	display: inline-block;
+	transition: .5s;
+}
+
+.sidebar_sub i:hover{
+	background: linear-gradient(to top right, #339933 31%, #00ff00 94%);
+	color: #303030;
+}
+/*
+@media (max-width: 1024px) {
+	.sidebar {
+	  width: auto;
+	}
+  }
+  
+  @media (max-width: 768px) {
+	.sidebar {
+	  width: auto;
+	}
+  }
+  
+  @media (max-width: 528px) {
+	.sidebar {
+	  height: auto;
+	}
+	.sidebar {
+	  width: auto;
+	}
+  }*/
+  
