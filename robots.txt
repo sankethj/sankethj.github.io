@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://sankethj.github.io/sitemap.xml
